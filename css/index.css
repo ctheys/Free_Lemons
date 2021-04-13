@@ -1,0 +1,52 @@
+.logo {
+    padding: 30px;
+}
+
+.nav { 
+    margin-right: 30px;
+}
+
+li a {
+    font-family: 'oswald';
+    color: #FECB45;
+}
+
+li a:hover {
+    color:#F96BCB;
+}
+
+.jumbotron {
+    background-image: url("../images/alicja-gancarz-B-pIQ58-eus-unsplash.jpg");
+    height: 900px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Oswald', sans-serif;
+}
+
+.btnYellow, .btnPink {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding: 5px;
+    width: 300px;
+    height: 100px;
+}
+
+.btnYellow {
+    background-color: #FECB45;
+}
+
+.btnPink {
+    background-color: #F96BCB;
+}
+
