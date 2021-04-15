@@ -1,0 +1,26 @@
+.logo {
+    padding: 30px;
+}
+
+.nav { 
+    margin-right: 30px;
+}
+
+li a {
+    font-family: 'oswald';
+    color: #FECB45;
+}
+
+li a:hover {
+    color:#F96BCB;
+}
+.btnYellow, .btnPink {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    padding: 5px;
+    width: 300px;
+    height: 100px;
+}
+.btnPink {
+    background-color: #F96BCB;
+}
