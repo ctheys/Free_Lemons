@@ -15,6 +15,12 @@ li a:hover {
     color:#F96BCB;
 }
 
+.form-control {
+    background-color: white    ;
+    border: 2px solid #F96BCB;
+    font-family: 'oswald';
+}
+
 .jumbotron {
     background-image: url("../images/alicja-gancarz-B-pIQ58-eus-unsplash.jpg");
     height: 900px;
@@ -33,20 +39,180 @@ li a:hover {
     color: white;
     font-family: 'Oswald', sans-serif;
 }
+  
+.btn-group {
+    padding: 50px 50px;
+    font-family: 'Oswald';
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    height: 200px;
+    /*position: relative;*/
+    top: 25%;
+    left: 25%;
+}
 
-.btnYellow, .btnPink {
-    font-family: 'Oswald', sans-serif;
+.buttonSearch {
+    background-color: #FECB45; 
+    border: 1px solid #FECB45;
     color: white;
-    padding: 5px;
+    border-radius: 8px;
     width: 300px;
     height: 100px;
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+.buttonPost{
+    background-color: #F96BCB; 
+    border: 1px solid #F96BCB;
+    color: white;
+    border-radius: 8px;
+    width: 300px;
+    height: 100px;
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+.btn-group .button:not(:last-child) {
+    border-right: none; /* Prevent double borders */
+  }
+  
+.btn-group .button:hover {
+    background-color: #3e8e41;
+  }
+
+.card-group {
+    width: 700px;
+    height: 500px;
 }
 
-.btnYellow {
+.card-body {
+    width: 700px;
+    height: 500px;
+}
+
+.text-center {
+    text-align: center;
+    color:#F96BCB;
+    font-family: 'Oswald', sans-serif; 
+    padding: 100px;
+    font-size: 64px;
+    text-shadow: 2px 2px;
+}
+
+.cards {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-bottom: 100px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "image text1"
+      "text2 image2"
+      "image3 text3"
+      "text4 image4";
+}
+
+.image { grid-area: image; }
+.image2 { grid-area: image2; }
+.image3 { grid-area: image3; }
+.text1 { grid-area: text1; }
+.text2 { grid-area: text2; }
+.text3 { grid-area: text3; }
+.text4 { grid-area: text4; }
+.image4 { grid-area: image4; }
+
+.text1 h3, .text2 h3, .text3 h3, .text4 h3 {
+    color:black;
+    font-family: 'oswald';
+    font-size: 32px;
+    padding: 60px;
+    text-align: center;
+}
+
+.text1 p, .text2 p, .text3 p, .text4 p {
+    color: black;
+    font-family: 'oswald';
+    font-size: 26px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-align: center;
+}
+.text1 button, .text2 button, .text3 button, .text4 button {
     background-color: #FECB45;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 8px;
+  }
+
+  .text1 button a, .text2 button a, .text3 button a, .text4 button a {
+    color: white;
+  }
+
+  .text1 button:hover, .text2 button:hover, .text3 button:hover, .text4 button:hover{
+    background-color:#F96BCB;
+    color: white;
 }
 
-.btnPink {
+.card-deck {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+}
+.card {
+    border: none;
+}
+
+.card h1 {
+    position: relative;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 60px;
+    text-align: center;
+    margin-bottom: none;
+}
+.card h2 {
+    font-family: 'oswald';
+    font-size: 32px;
+    text-align: center;
+    margin-top: -30px;
+    margin-bottom: 30px;
+}
+.card p {
+    font-family: 'oswald';
+    font-size: 20px;
+    text-align: center;
+}
+.starRating {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    margin-bottom: 50px;
+}
+
+.shareStory {
+    margin-bottom: 200px;
     background-color: #F96BCB;
+    height: 200px;
+    width: 80%;
+    border-radius: 8px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.share {
+    font-family: 'oswald';
+    font-size: 52px;
+    color: white;
+    text-align: center;
+}
