@@ -1,7 +1,12 @@
+/* Navigation Bar*/
 .logo {
     padding: 30px;
 }
 
+.navbar {
+    border: 0.5px solid #EBE2E2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02), 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+}
 .nav { 
     margin-right: 30px;
 }
@@ -14,7 +19,31 @@ li a {
 li a:hover {
     color:#F96BCB;
 }
-.btnYellow, .btnPink {
+
+.form-control {
+    background-color: white    ;
+    border: 2px solid #F96BCB;
+    font-family: 'oswald';
+}
+
+
+/*Form*/
+
+.text-center {
+    text-align: center;
+    color:#F96BCB;
+    font-family: 'Oswald', sans-serif; 
+    font-size: 64px;
+    text-shadow: 2px 2px;
+    margin-top: 100px;
+}
+.form {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+/*.btnYellow, .btnPink {
     font-family: 'Oswald', sans-serif;
     color: white;
     padding: 5px;
@@ -23,4 +52,89 @@ li a:hover {
 }
 .btnPink {
     background-color: #F96BCB;
+}*/
+
+.buttonPink {
+    background-color: #F96BCB;
+    font-family: 'oswald';
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 8px;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    cursor: pointer;
+  }
+
+  .buttonPink:hover {
+    background-color: white;
+    border: 2px solid #F96BCB;
+    color: #F96BCB;
+    font-family: 'oswald';
+}
+
+
+
+
+/*footer*/
+.footerBar{
+    background-color: #FFEDBE;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "menu getInTouch join";
+}
+
+.footerBarLinks {
+    margin-left: 200px;
+}
+.footerNavBar, .getInTouch, .join {
+    padding: 70px 0;
+}
+.footerNavBar a {
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+}
+  
+.getInTouch { 
+    grid-area: "getInTouch"; 
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+    text-align: center;
+}
+
+.icon {
+    padding: 5px;
+}
+  
+.join { grid-area: "join"; 
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+    text-align: center;
+    margin-right: 200px;
+}
+
+.joinButton {
+    margin-top: 5px;
+    width: 250px;
+    height: 60px;
+    background-color: #F96BCB;
+    border: #F96BCB;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

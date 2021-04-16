@@ -1,0 +1,92 @@
+/* Navigation Bar*/
+.logo {
+    padding: 30px;
+}
+
+.nav { 
+    margin-right: 30px;
+}
+
+.navbar {
+    border: 0.5px solid #EBE2E2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02), 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+li a {
+    font-family: 'oswald';
+    color: #FECB45;
+}
+
+li a:hover {
+    color:#F96BCB;
+}
+
+.form-control {
+    background-color: white    ;
+    border: 2px solid #F96BCB;
+    font-family: 'oswald';
+}
+
+/*body*/
+
+
+
+
+
+
+/*footer*/
+.footerBar{
+    background-color: #FFEDBE;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "menu getInTouch join";
+}
+
+.footerBarLinks {
+    margin-left: 200px;
+}
+.footerNavBar, .getInTouch, .join {
+    padding: 70px 0;
+}
+.footerNavBar a {
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+}
+  
+.getInTouch { 
+    grid-area: "getInTouch"; 
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+    text-align: center;
+}
+
+.icon {
+    padding: 5px;
+}
+  
+.join { grid-area: "join"; 
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+    text-align: center;
+    margin-right: 200px;
+}
+
+.joinButton {
+    margin-top: 5px;
+    width: 250px;
+    height: 60px;
+    background-color: #F96BCB;
+    border: #F96BCB;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

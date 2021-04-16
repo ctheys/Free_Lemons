@@ -7,6 +7,11 @@
     margin-right: 30px;
 }
 
+.navbar {
+    border: 0.5px solid #EBE2E2;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.02), 0 4px 10px 0 rgba(0, 0, 0, 0.05);
+}
+
 li a {
     font-family: 'oswald';
     color: #FECB45;
