@@ -1,3 +1,4 @@
+/* Navigation Bar*/
 .logo {
     padding: 30px;
 }
@@ -21,6 +22,7 @@ li a:hover {
     font-family: 'oswald';
 }
 
+/* Hero */ 
 .jumbotron {
     background-image: url("../images/alicja-gancarz-B-pIQ58-eus-unsplash.jpg");
     height: 900px;
@@ -39,7 +41,7 @@ li a:hover {
     color: white;
     font-family: 'Oswald', sans-serif;
 }
-  
+/* Buttons*/ 
 .btn-group {
     padding: 50px 50px;
     font-family: 'Oswald';
@@ -50,8 +52,12 @@ li a:hover {
     cursor: pointer;
     height: 200px;
     /*position: relative;*/
-    top: 25%;
-    left: 25%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 100px;
 }
 
 .buttonSearch {
@@ -63,7 +69,14 @@ li a:hover {
     height: 100px;
     display: inline-block;
     margin-right: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+  .buttonSearch:hover {
+    background-color: white;
+    border: 2px solid #FECB45;
+    color: #FECB45
+  } 
   
 .buttonPost{
     background-color: #F96BCB; 
@@ -74,16 +87,20 @@ li a:hover {
     height: 100px;
     display: inline-block;
     margin-left: 15px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+.buttonPost:hover {
+    background-color: white;
+    border: 2px solid #F96BCB;
+    color: #F96BCB
+  } 
   
 .btn-group .button:not(:last-child) {
     border-right: none; /* Prevent double borders */
   }
-  
-.btn-group .button:hover {
-    background-color: #3e8e41;
-  }
 
+  /* Cards About Free Lemons*/
 .card-group {
     width: 700px;
     height: 500px;
@@ -107,6 +124,8 @@ li a:hover {
     margin-left: 200px;
     margin-right: 200px;
     margin-bottom: 100px;
+    /*border: 0.5px solid #EBE2E2;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 }
 .grid-container {
     display: grid;
@@ -139,8 +158,9 @@ li a:hover {
 
 .text1 p, .text2 p, .text3 p, .text4 p {
     color: black;
-    font-family: 'oswald';
-    font-size: 26px;
+    font-family:'Oswald', sans-serif;
+    font-size: 22px;
+    font-weight: 100;
     margin-left: 50px;
     margin-right: 50px;
     text-align: center;
@@ -151,8 +171,14 @@ li a:hover {
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     border-radius: 8px;
+    position: relative;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-top: 50px;
+    cursor: pointer;
   }
 
   .text1 button a, .text2 button a, .text3 button a, .text4 button a {
@@ -164,6 +190,7 @@ li a:hover {
     color: white;
 }
 
+/*Testimonials*/
 .card-deck {
     margin-left: 100px;
     margin-right: 100px;
@@ -188,10 +215,11 @@ li a:hover {
     margin-bottom: 30px;
 }
 .card p {
-    font-family: 'oswald';
+    font-family: 'Oswald', sans-serif;';
     font-size: 20px;
     text-align: center;
 }
+
 .starRating {
     display: block;
     margin-left: auto;
@@ -209,10 +237,72 @@ li a:hover {
     display: block;
     margin-left: auto;
     margin-right: auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .share {
     font-family: 'oswald';
     font-size: 52px;
     color: white;
     text-align: center;
+    padding: 70px 0;
 }
+
+/*footer*/
+.footerBar{
+    background-color: #FFEDBE;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 5px 5px;
+    grid-template-areas:
+      "menu getInTouch join";
+}
+
+.footerBarLinks {
+    margin-left: 200px;
+}
+.footerNavBar, .getInTouch, .join {
+    padding: 70px 0;
+}
+.footerNavBar a {
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+}
+  
+.getInTouch { 
+    grid-area: "getInTouch"; 
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+    text-align: center;
+}
+
+.icon {
+    padding: 5px;
+}
+  
+.join { grid-area: "join"; 
+    color: black;
+    font-family: 'oswald';
+    font-size: 32px; 
+    text-align: center;
+    margin-right: 200px;
+}
+
+.joinButton {
+    margin-top: 5px;
+    width: 250px;
+    height: 60px;
+    background-color: #F96BCB;
+    border: #F96BCB;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
