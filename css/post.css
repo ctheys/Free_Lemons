@@ -1,4 +1,4 @@
-/* Navigation Bar*/
+/* -----------------Navigation Bar-----------------*/
 .logo {
     padding: 30px;
 }
@@ -27,12 +27,12 @@ li a:hover {
     font-family: 'oswald';
 }
 
-/*body*/
-
+/*Post Produce Banner*/
 .header {
     background-color: #F96BCB;
     height: 100px;
 }
+
 .header-brand{
     font-family: 'oswald';
     color: white;
@@ -41,11 +41,91 @@ li a:hover {
     padding: 30px 0;
 }
 
+/* -----------------Body-----------------*/
+
+
+.postProduce {
+    border: 1px solid #CFCCCC;
+    margin-top: 200px;
+    margin-left: 500px;
+    margin-right: 500px;
+    margin-bottom: 200px;
+    
+}
+.newListing, .textListing, .furtherInfo {
+    font-family: 'helvetica';
+    font-size: 30px;
+    text-align: center;
+    font-style: bold;
+    margin-bottom: 50px;
+}
+
+/*New Listing*/
+.postPhoto {
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin-bottom: -40px;
+}
+
+.spinach {
+    border-radius: 8px;
+}
+
+/*Tell us About your listing*/
+.form-group {
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+/*Further Information*/
+
+.listingDescription, .extraInfo {
+    margin-bottom: 100px;
+}
+
+.grid-container {
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.Drop-down1, .Drop-drown2, .Drop-down3 {
+    text-align: left;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Location Drop-down1"
+      "Category Drop-drown2"
+      "Collection-Informatin Drop-down3";
+}
+.Location { grid-area: Location; }
+.Category { grid-area: Category; }
+.Collection-Informatin { grid-area: Collection-Informatin; }
+.Drop-down1 { grid-area: Drop-down1; }
+.Drop-drown2 { grid-area: Drop-drown2; }
+.Drop-down3 { grid-area: Drop-down3; }
+ 
 
 
 
 
-/*footer*/
+/* -----------------Footer-----------------*/
 .footerBar{
     background-color: #FFEDBE;
     display: grid;
