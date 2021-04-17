@@ -45,32 +45,35 @@ li a:hover {
 
 
 .postProduce {
-    border: 1px solid #CFCCCC;
-    margin-top: 200px;
-    margin-left: 500px;
-    margin-right: 500px;
-    margin-bottom: 200px;
-    
+    border: 3px solid #F96BCB;
+    box-shadow: 2px 2px 2px grey;
+    background-color: #FEEEF9;
+    margin-top: 5%;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 5%;  
 }
+
 .newListing, .textListing, .furtherInfo {
     font-family: 'helvetica';
     font-size: 30px;
     text-align: center;
     font-style: bold;
-    margin-bottom: 50px;
+    padding: 5%;
 }
 
-/*New Listing*/
-.postPhoto {
+/*new listing*/
+
+.photo {
+    padding: 50px;
     text-align: center;
-    text-decoration: none;
     display: inline-block;
     position: relative;
     top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    margin-bottom: -40px;
+    margin-top: 100px;
 }
 
 .spinach {
@@ -83,11 +86,10 @@ li a:hover {
     margin-right: 100px;
 }
 
-/*Further Information*/
-
-.listingDescription, .extraInfo {
-    margin-bottom: 100px;
+.listingDescription {
+    margin-top: -20%;
 }
+/*Further Information*/
 
 .grid-container {
     margin-top: 100px;
@@ -113,7 +115,9 @@ li a:hover {
       "Location Drop-down1"
       "Category Drop-drown2"
       "Collection-Informatin Drop-down3";
+    margin-top: 8%;
 }
+
 .Location { grid-area: Location; }
 .Category { grid-area: Category; }
 .Collection-Informatin { grid-area: Collection-Informatin; }
@@ -121,8 +125,34 @@ li a:hover {
 .Drop-drown2 { grid-area: Drop-drown2; }
 .Drop-down3 { grid-area: Drop-down3; }
  
+.Location, .Category, .Collection-Information {
+    text-align:left;
+    margin-left: 20%;
+}
+.Drop-down1, .Drop-down2, .Drop-down3 {
+    text-align: left;
+    margin-right: 20%;
+}
 
-
+.postListing {
+    margin-top: 5%;
+    width: 250px;
+    height: 60px;
+    background-color: #F96BCB;
+    border: #F96BCB;
+    color: white;
+    font-family: 'Oswald';
+    font-size: 22px;
+    cursor: pointer;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    position: relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 
 
 /* -----------------Footer-----------------*/
