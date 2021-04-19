@@ -36,6 +36,7 @@ li a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    
 }
 
 .container {
@@ -49,6 +50,11 @@ li a:hover {
 
 }
 
+.lead{
+    color: white;
+
+}
+
 
 .footerBar{
     background-color: #FFEDBE;
@@ -58,6 +64,24 @@ li a:hover {
     gap: 5px 5px;
     grid-template-areas:
       "menu getInTouch join";
+}
+
+p {
+    color: black;
+    font-family: 'Oswald';
+    font-size: 32px;
+    padding: 60px;
+    text-align: center;
+}
+
+.text h1 {
+    text-align: center;
+    font-family: 'Oswald';   
+}
+
+.text{
+    margin-right: 10%;
+    margin-left: 10%;
 }
 
 .footerBarLinks {
