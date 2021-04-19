@@ -66,10 +66,15 @@ li a:hover {
 .footerNavBar, .getInTouch, .join {
     padding: 70px 0;
 }
-.footerNavBar a {
+.footerNavBar h1 {
     color: black;
     font-family: 'oswald';
     font-size: 32px; 
+}
+.footerNavBar a {
+    color: black;
+    font-family: 'oswald';
+    font-size: 26px; 
 }
   
 .getInTouch { 
